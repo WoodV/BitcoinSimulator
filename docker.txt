@@ -1,0 +1,7 @@
+## Interact with docker container:
+
+docker exec --user bitcoin CONTAINER_NAME COMMAND
+
+## Regtest data:
+
+/home/bitcoin/.bitcoin/regtest

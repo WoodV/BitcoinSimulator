@@ -1,0 +1,50 @@
+## What is a bitcoin
+
+## How to join a network
+
+## What is a piece of transaction
+
+## How to get the information of a transaction from blockchain
+
+## How to make a transaction
+	## How to make a single transaction
+	
+	## How to make a combined transaction
+
+	## How to make a split transaction
+
+## How to broad cast my transaction
+
+## How to listen to transactions made by others
+
+## How to verify a transaction
+	## How to verify a new transaction
+
+	## How to verify an old transaction
+
+## How to add an transaction to current block
+
+## How to get information for the curent block
+
+## How to calculate the current hash puzzle
+
+## How to split the calculation to others
+
+## Who sets the difficulty of hash puzzle
+
+## How to add a new block to the current block chain
+
+## How to broadcast my solution of current new block
+
+## How to save two concurrent new blockchain branches
+
+## How to replace my current chain with the best block chain
+
+## How to get information of a wallet corresponding to a certain private/public key
+
+--------------------------------------------------------------------------------------
+
+Mainnet:
+
+## How to check balance of a certain public key in real world
+curl https://blockchain.info/unspent?active=1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK

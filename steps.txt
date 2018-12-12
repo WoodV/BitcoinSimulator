@@ -1,0 +1,25 @@
+# add users    
+3  sudo adduser jvlarble
+    4  sudo adduser minqiang
+    9  sudo usermod -aG sudo jvlarble
+   10  sudo usermod -aG sudo minqiang
+
+# Install docker   
+19  sudo apt-get update
+   20  sudo apt-get upgrade
+   48  sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+   49  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   51  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   52     $(lsb_release -cs) \
+   53     stable"
+   54  sudo apt-get update
+   55  sudo apt-get install docker-ce
+
+# Post-installation
+   28  sudo groupadd docker
+   29  sudo usermod -aG docker mzheng
+   30  sudo usermod -aG docker minqiang
+   31  sudo usermod -aG docker jvlarble
+
+# Hash difficulty
+2000 hash calculation takes around 7s. 
