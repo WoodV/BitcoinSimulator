@@ -33,6 +33,7 @@ nounce=$RANDOM
 
 
 #Continuously mine the next block
+echo "Start mining as a partner of host $host"
 while true
 do
 	#check if anyone solve block,
@@ -48,7 +49,7 @@ do
 	#reference, then calculate sha1 hash.
 	#Do it 10,000 times
 	kick=0
-	while [ $kick -le 1000  ]
+	while [ $kick -le 200  ]
 		do
 			#check if succeed
 			hash=$(echo "$current$nounce$kick" | sha1sum)
@@ -58,6 +59,7 @@ do
 				#send notification to leader
 				echo 'done'	> /dev/tcp/${host}/2049
 				echo 'partner solved'
+				date
 
 				# wait for 3 second for leader to process
 				sleep 3
@@ -67,5 +69,5 @@ do
 		done
 
 	#sleep for 1s 
-	sleep 1
+	#sleep 1
 done
